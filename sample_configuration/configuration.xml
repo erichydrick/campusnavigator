@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationData xmlns="http://www.example.org/configurationSchema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation=
+"http://www.example.org/configurationSchema configurationSchema.xsd ">
+  
+    <center>
+        <latitude>
+            36.10296
+        </latitude>
+        <longitude>
+            -79.504366
+        </longitude>
+    </center>
+
+    <allowMultipleRoutes>true</allowMultipleRoutes>
+    
+</configurationData>

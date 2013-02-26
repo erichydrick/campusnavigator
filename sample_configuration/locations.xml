@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<campus xmlns="http://www.example.org/locations2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.example.org/locations2 locationsSchema.xsd ">
+
+    <location>
+        <name>Acorn Coffee Shop</name>
+        <coordinates>
+            <latitude>36.101211</latitude>
+            <longitude>-79.506871</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Admissions Welcome Center</name>
+        <coordinates>
+            <latitude>36.104838</latitude>
+            <longitude>-79.504189</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Alamance Building</name>
+        <coordinates>
+            <latitude>36.101852</latitude>
+            <longitude>-79.504339</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Alumni Field House</name>
+        <coordinates>
+            <latitude>36.110737</latitude>
+            <longitude>-79.508078</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Amphitheatre</name>
+        <coordinates>
+            <latitude>36.10179</latitude>
+            <longitude>-79.501716</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Aramark</name>
+        <address>
+            <street>214 North Williamson Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.101713</latitude>
+            <longitude>-79.50671</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Arts West</name>
+        <coordinates>
+            <latitude>36.103339</latitude>
+            <longitude>-79.512627</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Belk Library</name>
+        <coordinates>
+            <latitude>36.104107</latitude>
+            <longitude>-79.503514</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Belk Pavilion</name>
+        <coordinates>
+            <latitude>36.102443</latitude>
+            <longitude>-79.501308</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Belk Track and White Field</name>
+        <coordinates>
+            <latitude>36.11016</latitude>
+            <longitude>-79.506233</longitude>
+        </coordinates>
+        <description>Elon Phoenix track and field</description>
+    </location>
+    
+    <location>
+        <name>Business Services</name>
+        <coordinates>
+            <latitude>36.103063</latitude>
+            <longitude>-79.510691</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Campus Technology Support</name>
+        <address>
+            <street>114 West Lebanon Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.10082</latitude>
+            <longitude>-79.507622</longitude>
+        </coordinates>
+        <description>Supports Windows PCs and Macs.</description>
+    </location>
+  
+    <location>
+        <name>Carlton Building</name>
+        <coordinates>
+            <latitude>36.102071</latitude>
+            <longitude>-79.504886</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Carolina Dorm</name>
+        <coordinates>
+            <latitude>36.102388</latitude>
+            <longitude>-79.502757</longitude>
+        </coordinates>
+        <description>All-female dorm.</description>
+    </location>
+  
+    <location>
+        <name>Center for the Arts</name>
+        <coordinates>
+            <latitude>36.105064</latitude>
+            <longitude>-79.506855</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Chandler Fountain</name>
+        <coordinates>
+            <latitude>36.106263</latitude>
+            <longitude>-79.501534</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Chandler Hall</name>
+        <coordinates>
+            <latitude>36.108516</latitude>
+            <longitude>-79.498036</longitude>
+        </coordinates>
+        <description>Moved to Danieley Center</description>
+    </location>
+  
+    <location>
+        <name>Chick-Fil-A</name>
+        <coordinates>
+            <latitude>36.101761</latitude>
+            <longitude>-79.506689</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Coclough Hall</name>
+        <coordinates>
+            <latitude>36.108667</latitude>
+            <longitude>-79.497352</longitude>
+        </coordinates>
+        <description>Moved to Danieley Center</description>
+    </location>
+  
+    <location>
+        <name>College Street Tap House</name>
+        <address>
+            <street>131 West College Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.10151</latitude>
+            <longitude>-79.50789</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Colonnades Dining Hall</name>
+        <coordinates>
+            <latitude>36.105906</latitude>
+            <longitude>-79.501437</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Danieley Center A</name>
+        <coordinates>
+            <latitude>36.105625</latitude>
+            <longitude>-79.495547</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Danieley Center B</name>
+        <coordinates>
+            <latitude>36.106059</latitude>
+            <longitude>-79.49581</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center C</name>
+        <coordinates>
+            <latitude>36.106447</latitude>
+            <longitude>-79.495987</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center D</name>
+        <coordinates>
+            <latitude>36.10741</latitude>
+            <longitude>-79.495987</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center E</name>
+        <coordinates>
+            <latitude>36.107561</latitude>
+            <longitude>-79.495576</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center F</name>
+        <coordinates>
+            <latitude>36.107418</latitude>
+            <longitude>-79.495037</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center G</name>
+        <coordinates>
+            <latitude>36.108335</latitude>
+            <longitude>-79.496614</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center H</name>
+        <coordinates>
+            <latitude>36.108701</latitude>
+            <longitude>-79.496298</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center I</name>
+        <coordinates>
+            <latitude>36.109158</latitude>
+            <longitude>-79.495936</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center J</name>
+        <coordinates>
+            <latitude>36.108929</latitude>
+            <longitude>-79.495458</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center K</name>
+        <coordinates>
+            <latitude>36.108597</latitude>
+            <longitude>-79.494938</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center O</name>
+        <coordinates>
+            <latitude>36.107395</latitude>
+            <longitude>-79.494584</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Center P</name>
+        <coordinates>
+            <latitude>36.10757</latitude>
+            <longitude>-79.494045</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Danieley Commons</name>
+        <coordinates>
+            <latitude>36.107758</latitude>
+            <longitude>-79.497188</longitude>
+        </coordinates>
+    </location>
+ 
+    <location>
+        <name>Driving Range and Putting Green</name>
+        <coordinates>
+            <latitude>36.096739</latitude>
+            <longitude>-79.499592</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Duke Building</name>
+        <coordinates>
+            <latitude>36.102058</latitude>
+            <longitude>-79.503722</longitude>
+        </coordinates>
+        <description>
+            Mathematics and Computer Science department building.
+        </description>
+    </location>
+  
+    <location>
+        <name>East Gym</name>
+        <coordinates>
+            <latitude>36.10231</latitude>
+            <longitude>-79.49905</longitude>
+        </coordinates>
+        <description>Commuter parking available.</description>
+    </location>
+  
+    <location>
+        <name>Elon Community Church UCC</name>
+        <address>
+            <street>271 North Williamson Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.102407</latitude>
+            <longitude>-79.507134</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Elon Elementary School</name>
+        <address>
+            <street>510 East Haggard Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.103957</latitude>
+            <longitude>-79.499168</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Elon Town Center</name>
+        <coordinates>
+            <latitude>36.101499</latitude>
+            <longitude>-79.506914</longitude>
+        </coordinates>
+        <description>Campus store location.</description>
+    </location>
+  
+    <location>
+        <name>Faculty/Staff Wellness Center</name>
+        <coordinates>
+            <latitude>36.102485</latitude>
+            <longitude>-79.512445</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>First Baptist Church of Elon</name>
+        <address>
+            <street>621 East Haggard Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.103685</latitude>
+            <longitude>-79.495413</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Fonville Fountain</name>
+        <coordinates>
+            <latitude>36.102238</latitude>
+            <longitude>-79.504259</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Gray Pavilion</name>
+        <coordinates>
+            <latitude>36.102054</latitude>
+            <longitude>-79.502215</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Grill Depot</name>
+        <coordinates>
+            <latitude>36.10297</latitude>
+            <longitude>-79.506946</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Harden Clubhouse</name>
+        <coordinates>
+            <latitude>36.098221</latitude>
+            <longitude>-79.499635</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Harper Center Parking Lot</name>
+        <coordinates>
+            <latitude>36.107196</latitude>
+            <longitude>-79.505203</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Harper Hall</name>
+        <coordinates>
+            <latitude>36.106345</latitude>
+            <longitude>-79.498894</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Health and Counseling Center</name>
+        <coordinates>
+            <latitude>36.106134</latitude>
+            <longitude>-79.504586</longitude>
+        </coordinates>
+        <description>Medical and pyschological help available</description>
+    </location>
+
+    <location>
+        <name>Holland House</name>
+        <coordinates>
+            <latitude>36.098724</latitude>
+            <longitude>-79.500375</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Holt Chapel</name>
+        <coordinates>
+            <latitude>36.098016</latitude>
+            <longitude>-79.499731</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Hooks, Brannock, Barney Dorms</name>
+        <coordinates>
+            <latitude>36.101296</latitude>
+            <longitude>-79.502714</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Hunt Field</name>
+        <coordinates>
+            <latitude>36.109441</latitude>
+            <longitude>-79.50516</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>International Studies Pavilion</name>
+        <coordinates>
+            <latitude>36.10169</latitude>
+            <longitude>-79.502204</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Irazu Coffee</name>
+        <address>
+            <street>304 North O'Kelly Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.105558</latitude>
+            <longitude>-79.502483</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Johnston Hall</name>
+        <coordinates>
+            <latitude>36.09967</latitude>
+            <longitude>-79.500316</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Kangaroo Express</name>
+        <address>
+            <street>110 West Haggard Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.102979</latitude>
+            <longitude>-79.507172</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Kenan Honors Pavilion</name>
+        <coordinates>
+            <latitude>36.10169</latitude>
+            <longitude>-79.501271</longitude>
+        </coordinates>
+        <description>Honors Fellows housing.</description>
+    </location>
+
+    <location>
+        <name>Kivette Hall</name>
+        <coordinates>
+            <latitude>36.106707</latitude>
+            <longitude>-79.500307</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Koury Athletic Center (Alumni Gym)</name>
+        <coordinates>
+            <latitude>36.103685</latitude>
+            <longitude>-79.505374</longitude>
+        </coordinates>
+        <description>Elon Phoenix basketball</description>
+    </location>
+
+    <location>
+        <name>Koury Business Center</name>
+        <coordinates>
+            <latitude>36.10641</latitude>
+            <longitude>-79.500911</longitude>
+        </coordinates>
+        <description>Elon Phoenix basketball</description>
+    </location>
+
+    <location>
+        <name>Koury Field House</name>
+        <coordinates>
+            <latitude>36.109042</latitude>
+            <longitude>-79.506812</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Lake Mary Nell</name>
+        <coordinates>
+            <latitude>36.106507</latitude>
+            <longitude>-79.507118</longitude>
+        </coordinates>
+    </location>  
+
+    <location>
+        <name>Lake Verona</name>
+        <coordinates>
+            <latitude>36.106447</latitude>
+            <longitude>-79.495021</longitude>
+        </coordinates>
+    </location> 
+
+    <location>
+        <name>Latham Park</name>
+        <coordinates>
+            <latitude>36.108089</latitude>
+            <longitude>-79.507971</longitude>
+        </coordinates>
+        <description>Elon Phoenix baseball</description>
+    </location>
+  
+    <location>
+        <name>Linder Hall</name>
+        <coordinates>
+            <latitude>36.101369</latitude>
+            <longitude>-79.501694</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Local Yogurt</name>
+        <address>
+            <street>114 West Lebanon Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.100747</latitude>
+            <longitude>-79.507772</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Long Building</name>
+        <coordinates>
+            <latitude>36.101073</latitude>
+            <longitude>-79.504248</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Loy Center</name>
+        <coordinates>
+            <latitude>36.106295</latitude>
+            <longitude>-79.503089</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Maynard Hall</name>
+        <coordinates>
+            <latitude>36.109093</latitude>
+            <longitude>-79.497542</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>McCrary Theatre</name>
+        <coordinates>
+            <latitude>36.105055</latitude>
+            <longitude>-79.507096</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>McCoy Commons</name>
+        <coordinates>
+            <latitude>36.104604</latitude>
+            <longitude>-79.507842</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>McEwen Building</name>
+        <coordinates>
+            <latitude>36.101374</latitude>
+            <longitude>-79.506313</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>McEwen Dining Hall</name>
+        <coordinates>
+            <latitude>36.102028</latitude>
+            <longitude>-79.506302</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>McMichael Parking Lot</name>
+        <coordinates>
+            <latitude>36.104698</latitude>
+            <longitude>-79.501839</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>McMichael Science Center</name>
+        <coordinates>
+            <latitude>36.103424</latitude>
+            <longitude>-79.501753</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Moffitt Hall</name>
+        <coordinates>
+            <latitude>36.105985</latitude>
+            <longitude>-79.499398</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Mooney Building</name>
+        <coordinates>
+            <latitude>36.101372</latitude>
+            <longitude>-79.503709</longitude>
+        </coordinates>
+        <description>Education department building.</description>
+    </location>
+    
+    <location>
+        <name>Moseley Center</name>
+        <coordinates>
+            <latitude>36.104849</latitude>
+            <longitude>-79.504385</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Oaks A</name>
+        <coordinates>
+            <latitude>36.104817</latitude>
+            <longitude>-79.508390</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Oaks B</name>
+        <coordinates>
+            <latitude>36.104804</latitude>
+            <longitude>-79.509001</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Oaks C</name>
+        <coordinates>
+            <latitude>36.104769</latitude>
+            <longitude>-79.5098</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Oaks D</name>
+        <coordinates>
+            <latitude>36.104023</latitude>
+            <longitude>-79.509709</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Oaks E</name>
+        <coordinates>
+            <latitude>36.104032</latitude>
+            <longitude>-79.508893</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Oaks F</name>
+        <coordinates>
+            <latitude>36.10427</latitude>
+            <longitude>-79.507853</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Office of Financial Planning</name>
+        <coordinates>
+            <latitude>36.103641</latitude>
+            <longitude>-79.502791</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Old Moffitt Dorm</name>
+        <coordinates>
+            <latitude>36.106758</latitude>
+            <longitude>-79.505954</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Old Staley Dorm</name>
+        <coordinates>
+            <latitude>36.107051</latitude>
+            <longitude>-79.506018</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Phi Beta Kappa Commons</name>
+        <coordinates>
+            <latitude>36.102765</latitude>
+            <longitude>-79.501721</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Powell Building</name>
+        <coordinates>
+            <latitude>36.102579</latitude>
+            <longitude>-79.503749</longitude>
+        </coordinates>
+        <description>Now home to the iMedia graduate program.</description>
+    </location>
+  
+    <location>
+        <name>Powell House</name>
+        <coordinates>
+            <latitude>36.101703</latitude>
+            <longitude>-79.50009</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Recreation Fields</name>
+        <coordinates>
+            <latitude>36.109067</latitude>
+            <longitude>-79.488873</longitude>
+        </coordinates>
+        <description>Used for intramurals.</description>
+    </location>
+
+    <location>
+        <name>Rhodes Stadium</name>
+        <coordinates>
+            <latitude>36.109974</latitude>
+            <longitude>-79.50767</longitude>
+        </coordinates>
+        <description>Elon Phoenix football stadium</description>
+    </location>
+  
+    <location>
+        <name>Rudd Field</name>
+        <coordinates>
+            <latitude>36.108297</latitude>
+            <longitude>-79.506265</longitude>
+        </coordinates>
+        <description>Elon Phoenix soccer</description>
+    </location>
+
+    <location>
+        <name>School of Health Sciences</name>
+        <address>
+            <street>400 North O'Kelly Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.107095</latitude>
+            <longitude>-79.4980187</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+      <name>Sheridan Place</name>
+      <coordinates>
+        <latitude>36.105461</latitude>
+        <longitude>-79.497124</longitude>
+      </coordinates>
+    </location>
+
+    <location>
+        <name>Skid's Restaurant</name>
+        <address>
+            <street>134 West Haggard Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.103135</latitude>
+            <longitude>-79.507767</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Sloan Dorm</name>
+        <coordinates>
+            <latitude>36.102382</latitude>
+            <longitude>-79.505986</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Smith Dorm</name>
+        <coordinates>
+            <latitude>36.10221</latitude>
+            <longitude>-79.503175</longitude>
+        </coordinates>
+        <description>All-male dorm.</description>
+    </location>
+  
+    <location>
+        <name>Softball Field</name>
+        <coordinates>
+            <latitude>36.101621</latitude>
+            <longitude>-79.498916</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>South Campus Fields</name>
+        <coordinates>
+            <latitude>36.099391</latitude>
+            <longitude>-79.498208</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Spence Pavilion</name>
+        <coordinates>
+            <latitude>36.102079</latitude>
+            <longitude>-79.501308</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Staley Hall</name>
+        <coordinates>
+            <latitude>36.106686</latitude>
+            <longitude>-79.499423</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Story Hall</name>
+        <coordinates>
+            <latitude>36.105946</latitude>
+            <longitude>-79.500235</longitude>
+        </coordinates>
+    </location>
+
+    <location>
+        <name>Subway</name>
+        <address>
+            <street>112 West Lebanon Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.1007777</latitude>
+            <longitude>-79.507209</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Tennis Courts</name>
+        <coordinates>
+            <latitude>36.102434</latitude>
+            <longitude>-79.500192</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Town Table</name>
+        <address>
+            <street>112 North Williamson Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.101093</latitude>
+            <longitude>-79.506866</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Trollinger House</name>
+        <address>
+            <street>201 West Trollinger Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.099993</latitude>
+            <longitude>-79.5084</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Truitt Center</name>
+        <address>
+            <street>401 East College Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.101703</latitude>
+            <longitude>-79.500643</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>US Post Office</name>
+        <address>
+            <street>105 South Williamson Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.099962</latitude>
+            <longitude>-79.506394</longitude>
+        </coordinates>
+    </location>
+  
+    <location>
+        <name>Varsity Sports Grill</name>
+        <coordinates>
+            <latitude>36.105158</latitude>
+            <longitude>-79.506297</longitude>
+        </coordinates>
+        <description>In the first floor of McEwen Dining Hall.</description>
+    </location>
+    
+    <location>
+        <name>Virginia Dorm</name>
+        <coordinates>
+            <latitude>36.102297</latitude>
+            <longitude>-79.505428</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>West Dorm</name>
+        <coordinates>
+            <latitude>36.10198</latitude>
+            <longitude>-79.505444</longitude>
+        </coordinates>
+        <description>All-female dorm.</description>
+    </location>
+    
+    <location>
+        <name>West End Station</name>
+        <address>
+            <street>138 West Lebanon Avenue</street>
+            <cityStateZip>Elon NC 27244</cityStateZip>
+        </address>
+        <coordinates>
+            <latitude>36.100734</latitude>
+            <longitude>-79.50789</longitude>
+        </coordinates>
+    </location>
+    
+    <location>
+        <name>Whitley Auditorium</name>
+        <coordinates>
+            <latitude>36.101564</latitude>
+            <longitude>-79.504854</longitude>
+        </coordinates>
+    </location>
+  
+</campus>

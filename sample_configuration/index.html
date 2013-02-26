@@ -1,0 +1,71 @@
+!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        
+        <title>Campus Navigator</title>
+            
+        <link rel="stylesheet" type="text/css" 
+              href="configuration/stylesheet.css" />
+       
+       	<script src="objects/Coordinate.js"></script>
+       	<script src="objects/Location.js"></script>       
+        <script src="javascript/initialization.js"></script>
+        <script src="javascript/formprocessing.js"></script>
+        
+    </head>
+    
+    <body>
+        <div class="nav_canvas" id="nav_canvas">
+            <form id = "locations" name ="locations" action="">
+                
+                <div id="startLocation">
+                    <p>
+                        Start Location: 
+                        <!--<select id="startingLocation" name="startingLocation" 
+                            disabled>
+                        </select>-->
+                        <input id="startingLocation" name="startingLocation" 
+                                type="text" onKeyUp="updateSuggestions(this)" 
+                                autocomplete="off" disabled />
+                    </p>
+                </div>
+                
+                <div id="extraLocations">
+                </div>
+                
+                <div id="endLocation">
+                    <p>
+                        End Location: 
+                        <!--<select id="endingLocation" name="endingLocation" 
+                            disabled>
+                        </select>-->
+                        <input id="endingLocation" name="endingLocation" 
+                                type="text" onKeyUp="updateSuggestions(this)"
+                                autocomplete="off" disabled />
+                    </p>
+                </div> 
+                <div class="button_container">
+                    <input id="directions" type="button" disabled 
+                            value="Get Directions" 
+                            onclick="processClick()" />
+        
+                    <input id="switch" type="button" disabled 
+                            value="Switch Endpoints"
+                            onclick="switchLocations()" />
+
+                        
+                    <input id="addDestination" type="button" disabled 
+                            value="Add Destination"
+                            onclick="addLocation()" />
+
+                        <input id="removeDestination" type="button" disabled
+                            value="Remove Destination"
+                            onclick="removeLocation()" />
+                </div>
+            </form>
+        </div>
+        <div id="map_canvas"></div>
+    </body>
+</html>

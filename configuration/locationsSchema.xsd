@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/locations2" xmlns:tns="http://www.example.org/locations2" elementFormDefault="qualified">
+
+
+    <complexType name="location">
+    	<sequence>
+    		<element name="name" type="string"></element>
+            <element name="address" type="tns:address" minOccurs="0"></element>
+            <element name="coordinates" type="tns:coordinates"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="description" type="string" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="campus">
+    	<sequence>
+    		<element name="location" type="tns:location" minOccurs="1"
+    			maxOccurs="unbounded">
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <element name="campus" type="tns:campus"></element>
+
+    <complexType name="coordinates">
+    	<sequence>
+    		<element name="latitude" type="double"></element>
+    		<element name="longitude" type="double"></element>
+    	</sequence>
+    </complexType>
+
+
+    <complexType name="address">
+    	<sequence>
+    		<element name="street" type="string"></element>
+    		<element name="cityStateZip" type="string"></element>
+    	</sequence>
+    </complexType>
+</schema>

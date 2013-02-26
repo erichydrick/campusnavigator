@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/configurationSchema" xmlns:tns="http://www.example.org/configurationSchema" elementFormDefault="qualified">
+
+    <complexType name="coords">
+    	<sequence>
+    		<element name="latitude" type="double"></element>
+    		<element name="longitude" type="double"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="configurationData">
+    	<sequence>
+        <element name="center" type="tns:coords"></element>
+        <element name="allowMultipleRoutes" type="boolean" minOccurs=1 
+            maxOccurs=1></element>
+    	</sequence>
+    </complexType>
+
+    <element name="configurationData" type="tns:configurationData"></element>
+</schema>
