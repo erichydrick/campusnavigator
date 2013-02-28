@@ -611,19 +611,6 @@ function renderDirections(result, status)
         display.setDirections(result);
         display.setMap(map);
 
-        /*
-         * Create the starting and ending markers for the map. We're using 
-         * the default Google maps icons for this to keep them consistent
-         * with the icons in the directions.
-         */
-      
-        /*startMarker = setMarker(startMarker, startMarkerListener,
-                result.routes[0].legs[0].start_location, locations[0]);
-        
-        endMarker = setMarker(endMarker, endMarkerListener, 
-                result.routes[0].legs[0].end_location, 
-                locations[locations.length - 1]);*/
-
         setMarkers(result, display.getRouteIndex());
     }
     
