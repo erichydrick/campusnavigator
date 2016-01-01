@@ -397,7 +397,7 @@ function initialize()
 
     // Get the configuration XML data.
     
-    xmlhttpConfig.open("GET", "configuartion/configuration.xml", true);
+    xmlhttpConfig.open("GET", "configuration/configuration.xml", true);
     
     /*
      * When the configuration XML data is retrieved, hand it off to the 
@@ -417,7 +417,7 @@ function initialize()
     xmlhttpConfig.send();    
     
     var xmlhttpLoc = new XMLHttpRequest();
-    xmlhttpLoc.open("GET", "configuartion/locations.xml", true);
+    xmlhttpLoc.open("GET", "configuration/locations.xml", true);
     
     /*
      * When the configuration XML data is retrieved, hand it off to the 
