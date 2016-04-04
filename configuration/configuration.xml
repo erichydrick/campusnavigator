@@ -6,13 +6,13 @@ xsi:schemaLocation=
   
     <center>
         <latitude>
-            0
+            36.10296
         </latitude>
         <longitude>
-            0
+            -79.504366
         </longitude>
     </center>
 
-    <allowMultipleRoutes>false</allowMultipleRoutes>
+    <allowMultipleRoutes>true</allowMultipleRoutes>
     
 </configurationData>
