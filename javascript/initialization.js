@@ -62,14 +62,15 @@ $(function() {
     }
 
     /**
-    * Adds a destination text box to the navigation form in the application.
-    */
-    function addLocation()
-    {
+     * Adds a destination text box to the navigation form in the application.
+     */
+    $("#addDestination").click(function() {
+        
         waypointCtr++;
 
-        var waypointParagraph = document.createElement("p");
-        var waypointField = document.createElement("input");
+        /* TODO: UPDATE THIS TO MATCH THE NEW INPUT LAYOUTS. */
+        var waypointParagraph = $("<p></p>");
+        var waypointField = $("<input></input>");
         var waypointLabel = "Destination " + waypointCtr + ":";
         var waypointFieldID = "waypoint" + waypointCtr;
         
@@ -81,25 +82,24 @@ $(function() {
 
         waypointParagraph.innerHTML = waypointLabel;
         waypointParagraph.appendChild(waypointField);
-        document.getElementById("extraLocations").appendChild(waypointParagraph);
+        $("#extraLocations").append(waypointParagraph);
 
-        // Since we have waypoints, enable the "Remove Location button"
-    
-        document.getElementById("removeDestination").disabled = false;
+        /* Since we have waypoints, enable the "Remove Location button" */
+        $("removeDestination").prop("disabled", false);
         
-        //writeLocations(waypointDivID);
-
         /*
-        * The free version of the Google Maps API can't support more than 10 
-        * locations, so disable the "Add Location" button if we reach 10 total 
-        * locations (starting location + ending location + 8 waypoints)
-        */
+         * The free version of the Google Maps API can't support more than 10 
+         * locations, so disable the "Add Location" button if we reach 10 total 
+         * locations (starting location + ending location + 8 waypoints)
+         */
 
         if (waypointCtr >= WAYPOINT_MAX)
         {
             document.getElementById("addDestination").disabled = true;
         }
-    }
+
+        return false;
+    });
 
     /**
     * Adds a click listener for the given marker that pops up an info window 
@@ -186,6 +186,8 @@ $(function() {
     
         var directionsService = new google.maps.DirectionsService();
         directionsService.route(directionsRequest, renderDirections);
+
+        return false;
     }
 
     /**
@@ -456,7 +458,6 @@ $(function() {
             locationData.push({id: name.toLowerCase(), text: name});
         }
    
-        console.log(locations);
         $("select").select2({data: locationData});
         $("#startingLocation").prop("disabled", false);
         $("#endingLocation").prop("disabled", false);
@@ -474,9 +475,8 @@ $(function() {
      * @return
      * True if the given locations have a value, false otherwise.
      */
-    function processClick()
-    {
-        hideSuggestions();
+    $("#directions").click(function() {
+        
         locationList = [];
 
         /* Make sure the marker-related lists are initialized. */
@@ -492,8 +492,8 @@ $(function() {
 
         var invalidLocations = [];
 
-        var start = document.getElementById("startingLocation").value;
-        var end = document.getElementById("endingLocation").value;
+        var start = $("#startingLocation").val();
+        var end = $("#endingLocation").val();
 
         /*
          * If the user didn't enter both a starting and ending 
@@ -561,7 +561,9 @@ $(function() {
          * ending locations the user entered.
          */
         calculateDirections(locationList);
-    }
+
+        return false;
+    });
 
     /**
      * Process any waypoints the user added to their route information.
@@ -693,8 +695,7 @@ $(function() {
         return invalidLocations;
     }
 
-    function removeLocation()
-    {
+    $("#removeLocation").click(function() {
         var parentDiv = $("#extraLocations");
         
         var numChildren = $(parentDiv).children().length;
@@ -719,7 +720,9 @@ $(function() {
          * cap, so make sure the "Add Destination" button is enabled.
          */
         $("#addDestination").prop("disabled", false);
-    }
+
+        return false;
+    });
 
     /**
      * Renders the walking directions in the browser.
@@ -741,13 +744,14 @@ $(function() {
         {
             endInfoWindow.close();
         }
-        
+       
         /*
          * If the status indicates a successful for request for directions, display
          * the directions in the browser.
          */     
         if (status === google.maps.DirectionsStatus.OK)
         {
+
             /*
              * If the directions renderer hasn't been initialized, initialize it
              * and set the panel that holds the step-by-step directions and map to
@@ -774,6 +778,8 @@ $(function() {
         {
             alert("Error getting directions, server returned: " + status);
         }
+
+        return false;
     }
 
     /**
@@ -869,14 +875,16 @@ $(function() {
     /**
      * Switches the current values in the starting and ending location combo boxes.
      */
-    function switchLocations()
-    {
-        var currentStart =$("#startingLocation").val();
+    $("#switch").click(function() {
+
+        var currentStart = $("#startingLocation").val();
         var currentEnd = $("#endingLocation").val();
         
-        $("#startingLocation").val(currentEnd);
-        $("#endingLocation").val(currentStart);
-    }
+        $("#startingLocation").val(currentEnd).trigger("change");
+        $("#endingLocation").val(currentStart).trigger("change");
+
+        return false;
+    });
 
     /**
      * Updates the zoom level of the map if it was zoomed in more than the maximum
