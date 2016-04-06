@@ -65,38 +65,26 @@ $(function() {
      * Adds a destination text box to the navigation form in the application.
      */
     $("#addDestination").click(function() {
-        
+       
         waypointCtr++;
 
-        /* TODO: UPDATE THIS TO MATCH THE NEW INPUT LAYOUTS. */
-        var waypointParagraph = $("<p></p>");
-        var waypointField = $("<input></input>");
-        var waypointLabel = "Destination " + waypointCtr + ":";
-        var waypointFieldID = "waypoint" + waypointCtr;
-        
-        waypointField.setAttribute("id", waypointFieldID);
-        waypointField.setAttribute("name", "waypoints[]");
-        waypointField.setAttribute("type", "text");
+        var id = "waypoint" + waypointCtr;
+        var label = $("<label></label>")
+            .attr("for", id)
+            .text("Destination " + waypointCtr);
+        var field = $("<select></select>")
+            .attr("id", id)
+            .attr("name", id);
+        var div = $("<div></div>")
+            .addClass("form-group");
 
-        initializeKeyHandlers(waypointField);
 
-        waypointParagraph.innerHTML = waypointLabel;
-        waypointParagraph.appendChild(waypointField);
-        $("#extraLocations").append(waypointParagraph);
+        $(div).append(label).append(field);
+        $("#extraLocations").append(div);
 
-        /* Since we have waypoints, enable the "Remove Location button" */
-        $("removeDestination").prop("disabled", false);
-        
-        /*
-         * The free version of the Google Maps API can't support more than 10 
-         * locations, so disable the "Add Location" button if we reach 10 total 
-         * locations (starting location + ending location + 8 waypoints)
-         */
+        $(field).select2({data: window.locationData});
 
-        if (waypointCtr >= WAYPOINT_MAX)
-        {
-            document.getElementById("addDestination").disabled = true;
-        }
+        enableAddRemoveDestination();
 
         return false;
     });
@@ -375,7 +363,7 @@ $(function() {
     function parseLocations(locXML)
     {
         locations = [];
-        var locationData = [];
+        window.locationData = [];
 
         var tags = locXML.getElementsByTagName("location");
         
@@ -455,10 +443,10 @@ $(function() {
             
             /* Add the Location to the list of Locations we have on campus. */
             locations[name.toLowerCase()] = xmlLocation;
-            locationData.push({id: name.toLowerCase(), text: name});
+            window.locationData.push({id: name.toLowerCase(), text: name});
         }
    
-        $("select").select2({data: locationData});
+        $("select").select2({data: window.locationData});
         $("#startingLocation").prop("disabled", false);
         $("#endingLocation").prop("disabled", false);
     }
@@ -695,31 +683,17 @@ $(function() {
         return invalidLocations;
     }
 
-    $("#removeLocation").click(function() {
+    $("#removeDestination").click(function() {
         var parentDiv = $("#extraLocations");
         
         var numChildren = $(parentDiv).children().length;
         var waypointDiv = $(parentDiv).children()[numChildren - 1];
         
-        $(parentDiv).remove(waypointDiv); 
+        $(waypointDiv).remove(); 
         
         waypointCtr--;
 
-        /*
-         * If there are no waypoints left, disable the "Remove Destination" button 
-         * since it's useless at this point.
-         */
-        
-        if (waypointCtr <= 0)
-        {
-            $("#removeDestination").prop("disabled", true);
-        }
-
-        /*
-         * Since we just removed a waypoint, we're guaranteed to be under waypoint
-         * cap, so make sure the "Add Destination" button is enabled.
-         */
-        $("#addDestination").prop("disabled", false);
+        enableAddRemoveDestination();
 
         return false;
     });
