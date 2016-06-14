@@ -239,23 +239,37 @@ $(function() {
      */
     function enableAddRemoveDestination()
     {
+
         /* 
-         * Enable the "Remove Location" button if any extra location was added. 
+         * Enable the "Remove Location" button if there are any waypoints,
+         * disable it otherwise.
          */
         if (waypointCtr > 0)
         {
+            
             $("#removeDestination").prop("disabled", false);
+
+        } else {
+
+            $("#removeDestination").prop("disabled", true);
+        
         }
 
         /*
          * There's a maximum of 8 waypoints that can be added. If we have 
-         * room for more, enable the "Add Destination" button.
+         * room for more, enable the "Add Destination" button, otherwise
+         * disable it.
          */
         if (waypointCtr < WAYPOINT_MAX)
         {
+            
             $("#addDestination").prop("disabled", false);
-        }
 
+        } else {
+
+            $("#addDestination").prop("disabled", true);
+
+        }
     }
 
     /**
@@ -584,40 +598,19 @@ $(function() {
          * If the user selected a Location from the combo box, add the Location's
          * map point to a list of waypoints.
          */
-        formWaypoints = document.locations.elements["waypoints[]"];
-        var numWaypoints = 0;
-
-        /*
-         * When there's only 1 waypoint, the document just sends back the
-         * select element rather than a NodeList. In that case, put the element
-         * into an array and carry on. 
-         */
-        if (formWaypoints && !(formWaypoints instanceof NodeList))
-        {
-            formWaypoints = [formWaypoints];
-            numWaypoints = formWaypoints.length;
-        }
-
-        /*
-         * When there's already a list of waypoints, get that length. Make sure
-         * there are actually waypoints listed first though.
-         */
-        else if (formWaypoints)
-        {
-            numWaypoints = formWaypoints.length;
-        }
+        formWaypoints = $("#extraLocations select");
+        var numWaypoints = formWaypoints.length;
 
         /*
          * Add each of the extra locations to the list of waypoints so they can
          * be included in the directions.
          */
-        for (var extraIndex = 0; extraIndex < numWaypoints; extraIndex++)
-        {
+        $.each(formWaypoints, function(index, waypoint) {
             /* 
              * Because we're removing elements as we go, we always want the first
              * waypoint selection box.
              */
-            var inputValue = formWaypoints[extraIndex].value;
+            var inputValue = waypoint.value;
 
             /*
              * Make sure the user entered something in the extra location combo 
@@ -646,37 +639,10 @@ $(function() {
                 {
                     invalidLocations.push(inputValue);
                 }
+            } else {
+                $(waypoint).remove();
             }
-        }
-
-        /*
-         * If any of the waypoints were bad, stop processing the waypoints so the
-         * user can fix them.
-         */
-        if (invalidLocations.length > 0)
-        {
-            enableAddRemoveDestination();
-            return invalidLocations;
-        }
-
-        /*
-         * Remove the waypoint elements and re-add the fields with values in them.
-         * This will clean up optional waypoints left blank by the user (which 
-         * technically aren't wrong per se, as they aren't required in the first 
-         * place).
-         */
-        $("#extraLocations").empty();
-
-        waypointCtr = 0;
-        
-        /* Manually add the waypoints with data back. */
-        for (waypointCtr; waypointCtr < selectedWaypoints.length; )
-        {
-            addLocation();
-            var waypointFieldID = "waypoint" + waypointCtr;
-
-            $("#" + waypointFieldID).val(selectedWaypoints[waypointCtr - 1]);
-        }
+        });
 
         enableAddRemoveDestination();
 

@@ -8,15 +8,15 @@
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" rel="stylesheet" />
 
-        <link rel="stylesheet" type="text/css" 
-                href="configuration/mobile.css" 
-                media="only screen and (max-device-width: 600px)"/>
-        <link rel="stylesheet" type="text/css" 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.red-amber.min.css" />
+
+        <link rel="stylesheet" typem"text/css" 
                 href="configuration/stylesheet.css" />
        
         <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
-       
+        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
        	<script src="javascript/objects/Coordinate.js"></script>
        	<script src="javascript/objects/Location.js"></script>       
         <script src="javascript/initialization.js"></script>
@@ -42,10 +42,10 @@
                     </select>
                 </div> 
                 <div class="button_container">
-                    <button id="directions" disabled>Get Directions</button>
-                    <button id="switch" disabled>Switch Endpoints</button>
-                    <button id="addDestination" disabled>Add Destination</button>
-                    <button id="removeDestination" disabled>Remove Destination</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="directions" disabled>Get Directions</button>
+                    <button id="switch" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" disabled>Switch Endpoints</button>
+                    <button id="addDestination" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" disabled>Add Destination</button>
+                    <button id="removeDestination" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" disabled>Remove Destination</button>
                 </div>
             </form>
         </div>

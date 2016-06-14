@@ -1,74 +1,68 @@
-/* 
- *  Document   : stylesheet
- *  Created on : Oct 9, 2011, 9:01:52 AM
- *  Author     : Eric Hydrick
- *  Description:
- *      Holds styling informaiton for the navigator webapp
-*/
+@media only screen and (max-width: 600px)
+    {
+    body 
+    { 
+        height: 100%; 
+        margin: 0; 
+        padding: 0 
+    }
 
+    div.button_container
+    {
+        list-style-type: none;
+    }
 
-body 
-{ 
-    height: 100%; 
-    margin: 0; 
-    padding: 0 
-}
+    div.button_container input
+    {
+        display: block;
+        float: both;
+        margin: 10px;
+        width: 100%;
+    }
 
-div.button_container
-{
-    list-style-type: none;
-}
+    div.suggestions
+    {
+        background-color: white;
+        border: 1px solid black;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        position: absolute;
+    }
 
-div.button_container input
-{
-    display: block;
-    float: both;
-    margin: 10px;
+    div.suggestions div
+    {
+        cursor: default;
+        padding: 0px 3px;
+    }
+
+    div.suggestions div.current
+    {
+        background-color: #3366CC;
+        color: white;
+    }
+
+    html 
+    {
+        height: 100% 
+    }
+
+    input
+    {
+        margin-top: 10px;
+    }
+
+    #map_canvas 
+    { 
+    height: 100%;
     width: 100%;
-}
+    }
 
-div.suggestions
-{
-    background-color: white;
-    border: 1px solid black;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    position: absolute;
-}
-
-div.suggestions div
-{
-    cursor: default;
-    padding: 0px 3px;
-}
-
-div.suggestions div.current
-{
-    background-color: #3366CC;
-    color: white;
-}
-
-html 
-{
-    height: 100% 
-}
-
-input
-{
-    margin-top: 10px;
-}
-
-#map_canvas 
-{ 
-   height: 100%;
-   width: 100%;
-}
-
-#nav_canvas
-{
-    float: top;
-    height: 5%;
-    min-width: 100%;
-    overflow: scroll;
-    text-align: center;
+    #nav_canvas
+    {
+        float: top;
+        height: 5%;
+        min-width: 100%;
+        overflow: scroll;
+        text-align: center;
+    }
 }
